@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100dvh;
+  background-color: rgb(213, 225, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+#card-container{
+  width: 15rem;
+  height: 24rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  gap: 1rem;
+  padding: 0.9rem;
+  font-family: "Outfint",sans-serif;
+}
+#card-container > div{
+  width: 100%;
+}
+#qr-container{
+  background-image: url("../images/image-qr-code.png");
+  background-size: cover;
+  background-position: center;
+  height: 60%;
+  border-radius: 0.5rem;
+}
+#title-container{
+  padding: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+}
+#description-container{
+  font-size: 0.7rem;
+  text-align: center;
+  color: hsl(216, 15%, 48%);
+  font-weight: 600;
+  padding: 0.2rem;
+}
