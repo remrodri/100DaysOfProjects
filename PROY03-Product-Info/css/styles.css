@@ -1,0 +1,159 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ......................... 12
+2. Variables ...................... 16
+3. Estilos generales .............. 27
+-------------------- */
+
+/* ----- Fuente ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ----- Variables ----- */
+:root {
+  /* colores */
+  --color: #181a1b;
+
+  /* config. */
+  --fuente: "Poppins", sans-serif;
+  /* --ft-size: 1rem; */
+  --ft-size: 10px;
+  --l-height: 1.5;
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--fuente);
+  font-size: var(--ft-size);
+  line-height: var(--l-height);
+  /* background: linear-gradient(to right, #fffdcd, #a3e6ff); */
+  color: var(--color);
+  height: 100dvh;
+  background-image: url("../images/pexels-karolina-grabowska-4466468.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.externalCard {
+  width: 30rem;
+  height: 22rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  /* box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff; */
+  padding: 2rem;
+}
+.externalCard:hover {
+  box-shadow: 10px 10px 50px #545454;
+}
+
+.internalCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.imageContainer {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+.imageStyle {
+  height: 123px;
+}
+.infoContainer {
+  width: 60%;
+}
+.highlighted {
+  background-color: #181a1b;
+  color: #d9d9d9;
+  width: 27%;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 0.5rem;
+  font-weight: 600;
+  padding: 3px;
+  margin-bottom: 9px;
+}
+.productName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.warning {
+  font-size: 0.5rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #5e5e5e;
+}
+.mainButton {
+  width: 100%;
+  height: 13%;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(71, 136, 233);
+  font-family: var(--fuente);
+  color: #ffffff;
+  font-size: 10px;
+  box-shadow: 0 4px rgb(28, 87, 238);
+}
+.mainButton:hover{
+  background: rgb(57, 188, 66);
+  box-shadow: 0 4px rgb(36, 117, 41);
+  cursor: pointer;
+}
+.infoStock {
+  font-weight: 500;
+  font-size: 8px;
+  margin: 15px 0 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(32, 222, 153);
+  border-radius: 50%;
+}
+.buttonsContainer {
+  width: 100%;
+  display: flex;
+  gap: 0.9rem;
+}
+.button {
+  font-family: var(--fuente);
+  font-size: 10px;
+  font-weight: 500;
+  width: 50%;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid rgb(201, 201, 218);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.button:hover{
+  background-color: rgb(248, 179, 77);
+  border: 2px solid rgb(156, 145, 73);
+  cursor: pointer;
+}
+
+.iconStyle {
+  width: 18px;
+}
