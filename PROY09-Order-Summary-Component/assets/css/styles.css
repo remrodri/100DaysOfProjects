@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 10px;
+  height: 100dvh;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card-container {
+  height: 30rem;
+  width: 20rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+}
+#img-container {
+  border-radius: 1rem 1rem 0 0;
+  height: 30%;
+}
+#main-img {
+  background-position: center;
+  background-size: cover;
+  width: 20rem;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+#info-container {
+  padding: 2rem;
+  font-size: 0.7rem;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#title-style {
+  text-align: center;
+}
+#paragraph-style {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#plan-container {
+  height: 4rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+  /* padding: 0 1rem; */
+  display: flex;
+}
+#left-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+#left-container img{
+  height: 2.2rem;
+}
+#annual-plan-container #title-style{
+  font-weight: 700;
+}
+
+#rigth-container{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+#button-style {
+  border-radius: 0.5rem;
+  border: none;
+  height: 2rem;
+  background-color: hsl(245, 75%, 52%);
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 0.6rem;
+  box-shadow: 0px 24px 38px -7px rgba(0,0,0,0.75);
+}
+#button-style:hover{
+  background-color: rgb(118, 108, 241);
+  cursor: pointer;
+}
+#a-style {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+}
