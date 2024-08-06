@@ -24,14 +24,38 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 #img-container {
-  border-radius: 0.5rem;
-  background-image: url("../../images/image-equilibrium.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 13rem;
+  position: relative;
+  background-color: aquamarine;
+  height: 13.9rem;
+}
+#img-container:hover #main-img {
+  opacity: 0.3;
+  
+}
+#img-container:hover #overlay {
+  opacity: 1;
+  display: block;
 }
 
+#main-img {
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  background-size: cover;
+  height: 14rem;
+  
+}
+
+#overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  transition: 0.5s ease;
+  opacity: 0;
+}
 
 #title-container {
   font-family: "Outfit", sans-serif;
