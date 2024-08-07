@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  /* colores */
+  --sedan: hsl(31, 77%, 52%);
+  --suv: hsl(184, 100%, 22%);
+  --luxury: hsl(179, 100%, 13%);
+
+  /* config. */
+  /* --fuente: "Poppins", sans-serif; */
+  /* --ft-size: 1rem; */
+  /* --ft-size: 10px; */
+  /* --l-height: 1.5; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  height: 100dvh;
+  padding: 4rem 1rem 0 1rem;
+  /* margin: 0 0 4rem 0; */
+  color: aliceblue;
+  font-family: "Lexen Deca", sans-serif;
+}
+#card-container {
+  width: 100%;
+}
+.car-card {
+  width: 100%;
+  height: 30rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-container h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.car-card p {
+  font-size: 1rem;
+}
+#sedan-background {
+  background-color: var(--sedan);
+  border-radius: 1rem 1rem 0 0;
+}
+#suv-background {
+  background-color: var(--suv);
+}
+#luxury-background {
+  background-color: var(--luxury);
+  border-radius: 0 0 1rem 1rem;
+}
+
+#sedan-font-color {
+  color: var(--sedan);
+}
+#sedan-font-color:hover {
+  color: aliceblue;
+}
+
+/* #sedan-font-color:hover{
+  background-color: transparent;
+  border: 2px solid aliceblue;
+  color: aliceblue;
+} */
+#suv-font-color {
+  color: var(--suv);
+}
+#suv-font-color:hover {
+  color: aliceblue;
+}
+
+#luxury-font-color {
+  color: var(--luxury);
+}
+#luxury-font-color:hover {
+  color: aliceblue;
+}
+
+.btn-container {
+  flex-grow: 1;
+  align-content: flex-end;
+}
+.btn {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+}
+
+@media (width>376px) {
+  body {
+    /* height: 100dvh; */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #card-container {
+    display: flex;
+    height: 30rem;
+    width: 60%;
+  }
+  .car-card {
+    width: 20rem;
+    height: 30rem;
+  }
+  #sedan-background {
+    border-radius: 1rem 0 0 1rem;
+  }
+  #luxury-background {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
