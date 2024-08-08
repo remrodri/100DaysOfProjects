@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  padding: 3rem 1.5rem;
+  font-size: 10px;
+  /* line-height: 1.5; */
+}
+#main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#text-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#title-style {
+  font-size: 3rem;
+  font-weight: 800;
+  color: hsl(300, 43%, 22%);
+  padding: 0 1.5rem;
+}
+#paragraph-style {
+  font-size: 1.1rem;
+  color: hsl(303, 10%, 53%);
+}
+#rates-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.rate-container {
+  height: 6rem;
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  gap: 1rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.card-container {
+  padding: 2.3rem 2rem;
+  display: flex;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  flex-direction: column;
+  gap: 2.3rem;
+  border-radius: 1rem;
+}
+.user-info-container {
+  display: flex;
+  /* height: 3rem; */
+  align-items: center;
+  gap: 2rem;
+}
+.user-info-container img {
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  object-fit: cover;
+}
+.user-info {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.user-name-style {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+.user-state-style {
+  color: hsl(333, 80%, 67%);
+}
+.user-message {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (width>376px) {
+  body {
+    height: 100dvh;
+    padding: 6rem 18rem;
+  }
+  #main-container {
+    height: 100%;
+    width: 100%;
+    gap: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #text-container {
+    width: 50%;
+    height: 50%;
+  }
+  #title-style {
+    padding: 0;
+    text-align: left;
+    width: 20rem;
+  }
+  #paragraph-style {
+    text-align: left;
+    width: 26rem;
+  }
+
+  #rates-container {
+    width: 50%;
+    height: 50%;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  #rate2{
+    align-self: center;
+  }
+  #rate3{
+    align-self:flex-end;
+  }
+
+  .rate-container {
+    flex-direction: row;
+    width: 85%;
+    height: 3.4rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+  #cards-container {
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* justify-content: center; */
+  }
+  .card-container {
+    padding: 2.3rem 2rem;
+    gap: 1.5rem;
+    height: 15.5rem;
+    width: 19rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+  #card2 {
+    align-self: center;
+  }
+  #card3{
+    align-self: flex-end;
+  }
+  .user-info-container img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .user-message {
+    font-size: 0.9rem;
+  }
+}
