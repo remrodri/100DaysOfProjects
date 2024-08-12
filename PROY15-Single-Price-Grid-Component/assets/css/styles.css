@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 10px;
+  background-color: hsl(204, 43%, 93%);
+  padding: 4rem 1.5rem;
+}
+.main-container{
+  
+  width: 100%;
+}
+.card-container{
+  width: 100%;
+  font-family: "Karla",sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.6rem 1.1rem;
+}
+#card1-style{
+  background-color: rgb(255, 255, 255);
+  color: hsl(218, 22%, 67%);
+  font-size: 0.9rem;
+  
+}
+#card1-style #title-style{
+  color:hsl(179, 62%, 43%);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#card1-style #subtitle-style{
+  color:hsl(71, 73%, 54%);
+  font-size: 1rem;
+}
+#card1-style #paragraph-style{
+  line-height: 1.8;
+}
+/* #bottom-container{
+  display: flex;
+  flex-direction: column;
+} */
+#card2-style{
+  background-color: rgb(43, 179, 177);
+  color: white;
+  width: 100%;
+}
+#card2-style #title-style{
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#card2-style #center-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+#card2-style #price-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#card2-style #price-container #value-style{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#card2-style #price-container #price-style{
+  color: hsl(204, 43%, 93%);
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+#card2-style #paragraph-style{
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+#card2-style button{
+  color: white;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: hsl(71, 73%, 54%);
+  font-family: inherit;
+  box-shadow: 0px 2px 20px 0px rgba(43,43,43,0.53);
+}
+#card3-style{
+  background-color: rgb(74, 190, 189);
+  color: white;
+  width: 100%;
+}
+#card3-style #paragraph-style{
+  line-height: 1.5;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding-right: 7rem;
+}
+#bottom-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+@media (width>376px) {
+  body{
+    height:100dvh;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #main-container{
+    width: 36rem;
+    border-radius: 1rem;
+  }
+  .card-container{
+    padding: 2rem 2rem;
+  }
+  #card1-style{
+    border-radius: 1rem 1rem 0 0;
+  }
+  #bottom-container{
+    flex-direction: row;
+
+  }
+  #bottom-container #card2-style{
+    width: 50%;
+    border-radius: 0 0 0 1rem;
+  }
+  #bottom-container #card3-style{
+    width: 50%;
+    border-radius: 0 0 1rem 0;
+  }
+  #card2-style{
+    display: flex;
+    justify-content: center;
+  }
+  #card2-style #paragraph-style{
+    margin-bottom: 0.5rem;
+    
+  }
+  #card3-style #paragraph-style{
+    padding-right: 4rem;
+  }
+  
+}
